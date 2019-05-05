@@ -16,8 +16,9 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-jersey'
-	compile group: 'org.jsoup', name: 'jsoup'
-	
+	compile group: 'org.jsoup', name: 'jsoup', version: '1.11.3'
+	compile group: 'com.h2database', name: 'h2', version: '1.4.199'
+	testCompile group: 'com.h2database', name: 'h2', version: '1.4.199'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	
 }
